@@ -7,7 +7,7 @@ export class ChampionService {
 
   constructor(private http: HttpClient) { }
   getHeroes(): any {
-    return this.http.get('/champions')
+    return this.http.get('http://localhost:3000/champion')
     .subscribe(data => {
       console.log(data);
     });
